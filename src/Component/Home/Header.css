@@ -1,0 +1,114 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1300px;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: -25px;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: url('data:image/svg+xml;utf8,<svg width="100" height="5" viewBox="0 0 100 5" xmlns="http://www.w3.org/2000/svg"><polyline points="0,2.5 10,0 20,2.5 30,0 40,2.5 50,0 60,2.5 70,0 80,2.5 90,0 100,2.5" stroke="black" fill="none" stroke-width="2"/></svg>')
+    repeat-x;
+  z-index: -1;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+  margin-left: 50px;
+}
+
+.logo {
+  width: 170px; 
+  height: auto; 
+  margin-right: -160px;
+}
+
+.left-section .text {
+  margin-left: 80px;
+}
+
+.left-section .Meraki {
+  margin-top: 15px;
+  margin-left: -90px;
+  font-size: larger;
+  text-align: left
+}
+
+.left {
+  text-align: center;
+}
+
+.left-section .text p {
+
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  margin-right: 10px;
+  margin-top: -20px;
+}
+
+.fa-regular {
+  font-size: 40px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.email1 {
+  background-color: #5bd85b;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+}
+.email1 .email {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.right-section .contact-button {
+  background-color: #44d344;
+  color: #fff;
+  border: 2px solid #7fff00;
+  padding: 10px 30px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  height: 55px;
+}
+
+.btn {
+  background-color: aqua;
+  margin-left: 10px;
+}
+
+.right-section .contact-button:hover {
+  background-color: #45d645;
+}

@@ -1,0 +1,96 @@
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-top: 120px;
+  width: 100%;
+  margin-left: 70PX;
+}
+
+.main-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.search-inputs {
+  padding-right: 35px; /* Add padding to the right to make space for the icon */
+  height: 50px; /* Increase height for better readability */
+  width: 400px; /* Increase width for better readability */
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 15px; /* Increase font size for better readability */
+
+}
+
+.secondary-inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+  margin: 30px;
+  /* background-color: #e24e1c; */
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+}
+
+.search-input {
+  padding-right: 35px; /* Add padding to the right to make space for the icon */
+  height: 40px; /* Increase height for better readability */
+  width: 250px; /* Increase width for better readability */
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px; /* Increase font size for better readability */
+
+}
+
+.add-query {
+  display: flex;
+  align-items: center;
+  
+}
+
+.query-button {
+  background-color: #c96240;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  width: 250px;
+  height: 40px;
+}
+
+.query-button:hover {
+  background-color: #c28b7a; /* Slightly darker on hover */
+}
+
+.title-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title-section h1 {
+  margin-top: -10px;
+  font-size: 35px; /* Increase font size */
+   /* Darker color for better visibility */
+}
+
+.title-section p {
+  font-size: 25px; /* Increase font size */
+  /* Darker color for better visibility */
+}
