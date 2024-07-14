@@ -3,8 +3,16 @@ import { Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import './Search.css'
 export default function Search() {
+
+  const openWhatsApp = () => {
+    const phoneNumber = "8767948130"; // Replace with your phone number
+    const message = "Hello, I have a query about the project."; // Replace with your message
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  };
   return (
     <>
+    <div className="testborder">
     <div className="main-input">
         <div className="inside-input">
           <Input
@@ -37,7 +45,7 @@ export default function Search() {
         </div>
 
         <div>
-          <button className="query-button"
+          <button className="query-button" onClick={openWhatsApp}
            style={{width: 200 , backgroundColor: "#c96240" ,borderRadius : 70}}>Add  Your Query</button>
         </div>
 
@@ -45,6 +53,7 @@ export default function Search() {
     <div className="title-sections">
         <h1>MERAKI PROJECT</h1>
         <p>DIY / TECHNOLOGY / LEARNING</p>
+      </div>
       </div>
 
     </>

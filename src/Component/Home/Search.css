@@ -1,9 +1,15 @@
+/* .testborder{
+  border: 2px solid black;
+  margin-top: 300px;
+} */
+
 .main-input {
   margin-top: 200px;
   margin-bottom: 100px;
   height: 5px;
   display: flex;
   justify-content: center; 
+ 
 }
 
 
