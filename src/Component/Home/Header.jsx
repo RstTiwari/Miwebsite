@@ -25,9 +25,9 @@ const Header = () => {
                 <i class="fa-regular fa-envelope"></i>
           </p>
           </div>
-            <div className=''>
+            <div className='btn'>
                      <button className="contact-button">
-                      <i ></i> CONTACT US
+                      CONTACT US
                      </button>
          </div>
       </div>

@@ -7,12 +7,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1370px;
   background-color: #fff;
   box-sizing: border-box;
   overflow: hidden;
   z-index: 1;
-  margin-top: -25px;
+  margin-top: 0px;
+  margin-left: 0px;
+  /* background-color: #44d344; */
 }
 
 .banner::before {
@@ -22,22 +24,23 @@
   left: 0;
   width: 100%;
   height: 10px;
-  background: url('data:image/svg+xml;utf8,<svg width="100" height="5" viewBox="0 0 100 5" xmlns="http://www.w3.org/2000/svg"><polyline points="0,2.5 10,0 20,2.5 30,0 40,2.5 50,0 60,2.5 70,0 80,2.5 90,0 100,2.5" stroke="black" fill="none" stroke-width="2"/></svg>')
-    repeat-x;
+  background: url('data:image/svg+xml;utf8,<svg width="100" height="5" viewBox="0 0 100 5" xmlns="http://www.w3.org/2000/svg"><polyline points="0,2.5 10,0 20,2.5 30,0 40,2.5 50,0 60,2.5 70,0 80,2.5 90,0 100,2.5" stroke="black" fill="none" stroke-width="2"/></svg>') repeat-x;
   z-index: -1;
 }
 
 .left-section {
   display: flex;
   align-items: center;
-  margin-top: -20px;
-  margin-left: 50px;
+  margin-top: -25px;
+  margin-left: 200px;
+  position: sticky;
 }
 
 .logo {
-  width: 170px; 
-  height: auto; 
+  width: 170px;
+  height: auto;
   margin-right: -160px;
+  position: sticky;
 }
 
 .left-section .text {
@@ -45,10 +48,10 @@
 }
 
 .left-section .Meraki {
-  margin-top: 15px;
-  margin-left: -90px;
+  margin-top: 0px;
+  margin-left: -180px;
   font-size: larger;
-  text-align: left
+  text-align: left;
 }
 
 .left {
@@ -56,7 +59,6 @@
 }
 
 .left-section .text p {
-
   margin: 0;
   font-size: 1.3em;
   font-weight: bold;
@@ -66,9 +68,11 @@
 .right-section {
   display: flex;
   align-items: center;
-  z-index: 2;
-  margin-right: 10px;
+  /* z-index: 2; */
+  margin-right: 100px;
   margin-top: -20px;
+  /* margin-left: 500px; */
+  position: sticky;
 }
 
 .fa-regular {
@@ -84,6 +88,7 @@
   width: 60px;
   margin-right: 10px;
 }
+
 .email1 .email {
   text-align: center;
   margin-top: 10px;
@@ -104,11 +109,190 @@
   height: 55px;
 }
 
-.btn {
+/* .btn {
   background-color: aqua;
   margin-left: 10px;
-}
+} */
 
 .right-section .contact-button:hover {
   background-color: #45d645;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    position: static;
+    margin-top: 0;
+  }
+
+  .left-section, .right-section {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-section {
+    margin-bottom: 20px;
+  }
+
+  .left-section .text {
+    margin-left: 0;
+  }
+
+  .left-section .Meraki {
+    margin-left: 0;
+  }
+
+  .logo {
+    display: flex;
+    margin-right: 0;
+    width: 150px; 
+    position: sticky;
+  }
+
+  .right-section {
+    margin-top: 10px;
+  }
+
+  .right-section .contact-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .email1 {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    margin: -30px;
+    width: 100%;
+    margin-top: -15px;
+    padding: 0px;
+    position: static;
+    /* background-color: #45d645; */
+    /* z-index: 1; */
+  }
+
+  /* .banner::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: url('data:image/svg+xml;utf8,<svg width="100" height="5" viewBox="0 0 100 5" xmlns="http://www.w3.org/2000/svg"><polyline points="0,2.5 10,0 20,2.5 30,0 40,2.5 50,0 60,2.5 70,0 80,2.5 90,0 100,2.5" stroke="black" fill="none" stroke-width="2"/></svg>') repeat-x;
+    z-index: -1;
+  } */
+
+  .logo {
+    width: 40px;
+    margin-top: 5px;
+    margin-left: -5px; /* Further adjustment for smaller screens */
+  }
+  .left-section .Meraki {
+    font-size:6px;
+    margin-top: -29px;
+    margin-left: 29px;
+    padding-top: 0px;
+  }
+  
+
+  .left-section .text {
+    margin-top: 25px;
+  }
+
+  .left-section .text p {
+    font-size:8px;
+    text-align: left;
+    margin-top: -23px;
+    margin-left: 80px;
+    padding: 0px;
+
+  }
+  
+
+  .fa-regular {
+    font-size:20px;
+    margin-left: 0px;
+   
+  }
+
+  .email1 {
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .right-section {
+    margin-top: -80px;
+    margin-left: 240px;
+  }
+  
+
+  .right-section .contact-button {
+    font-size:9px;
+    margin-top: -46px;
+    margin-left: 45px;
+    border: #fff;
+    width: 96px;
+    height: 35px;
+    border-color: brown;
+  }
+  /* .right-section .btn {
+    width: 90px;
+    margin-right: 30px;
+    border-color: brown;
+  } */
+}
+
+
+@media screen and (max-width: 380px) {
+
+  .left-section .Meraki {
+    font-size:5px;
+    margin-top: -30px;
+    margin-left: 30px;
+  }
+
+  .left-section .text {
+    margin-top: 26px;
+    margin-left: -6px;
+  }
+  
+  .left-section .text p {
+    font-size:7px;
+    text-align: left;
+    margin-top: -22px;
+    margin-left: 80px;
+    padding: 0px;
+
+  }
+
+  .right-section {
+    margin-top: -75px;
+    margin-left: 200px;
+    /* background-color: #44d344; */
+
+  }
+
+  
+    .right-section .contact-button {
+    font-size:9px;
+    margin-top: -46px;
+    margin-left: 45px;
+    border: #fff;
+    width: 88px;
+    height: 35px;
+    border-color: brown;
+  }
+}
+

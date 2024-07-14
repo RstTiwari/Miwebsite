@@ -1,42 +1,52 @@
-import React from 'react';
-import { SearchOutlined } from '@ant-design/icons';
-import './Banner.css'; // assuming you have a CSS file for your component
-
-export default function Banner() {
+import React from "react";
+import { Input } from "antd";
+import { SearchOutlined } from "@ant-design/icons";
+import './Search.css'
+export default function Search() {
   return (
-    <div className="banner-container">
-      <div className='main-input'>
-        <div className="search-container">
-          <SearchOutlined className="search-icon" />
-          <input type="text" className="search-inputs" placeholder="Search..." />
-        </div>
-      </div>
-
-      <div className="secondary-inputs">
-        <div className="search-container">
-          <input type="text" className="search-input" placeholder="Mechanical Project" />
-          <SearchOutlined className="search-icon" />
+    <>
+    <div className="main-input">
+        <div className="inside-input">
+          <Input
+            placeholder="Mechanical Project"
+            suffix={<SearchOutlined />}
+            style={{ height: 45,
+              width:250,
+              borderRadius : 10}}
+          />
         </div>
 
-        <div className="search-container">
-          <input type="text" className="search-input" placeholder="Electronic Project" />
-          <SearchOutlined className="search-icon" />
+        <div className="inside-input">
+          <Input
+            placeholder="Electronic Project"
+            suffix={<SearchOutlined />}
+            style={{ height: 45,
+              width:250,
+              borderRadius : 10}}
+          />
         </div>
 
-        <div className="search-container">
-          <input type="text" className="search-input" placeholder="Software Project" />
-          <SearchOutlined className="search-icon" />
+        <div className="inside-input">
+          <Input
+            placeholder="Software Project"
+            suffix={<SearchOutlined />}
+            style={{ height: 45,
+              width:250,
+              borderRadius : 10}}
+          />
         </div>
 
-        <div className="add-query">
-          <button className="query-button">Add Your Queries</button>
+        <div>
+          <button className="query-button"
+           style={{width: 200 , backgroundColor: "#c96240" ,borderRadius : 70}}>Add  Your Query</button>
         </div>
-      </div>
 
-      <div className="title-section">
+    </div>
+    <div className="title-sections">
         <h1>MERAKI PROJECT</h1>
         <p>DIY / TECHNOLOGY / LEARNING</p>
       </div>
-    </div>
+
+    </>
   );
 }

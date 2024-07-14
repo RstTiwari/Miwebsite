@@ -1,0 +1,55 @@
+.image-containers {
+    width: 100%; /* Adjust width as needed */
+    overflow: hidden;
+    position: relative;
+    height: 1800px;
+    margin-top: 70px;
+    /* background-color: black; */
+    /* margin-bottom: -200px; */
+
+}
+
+.image-containers img {
+    position: absolute;
+    top: -250px;
+    background-color: black; /* Move the image up by 200px to crop from the top */
+    /* bottom: -200px; */
+    /* background-color: aquamarine; */
+    left: 0;
+    width: 100%; /* Make sure the image covers the container width */
+
+}
+
+/* .image-container:hover{
+    transform: scale(1.05); /* Slightly scale the text on hover 
+    transition: color 0.5s ease, transform 0.5s ease;
+    
+} */
+@media screen and (max-width: 480px) {
+    .image-containers {
+        /* width: 50%; */
+        overflow: hidden;
+        position: relative;
+        /* height: 800px; */
+        margin-top: 10px;
+        /* background-color: black; */
+        /* margin-bottom: -200px; */
+    }
+    .image-containers img {
+        position: absolute;
+        top: -50px;
+        /* height: 600px; */
+        width: 72%; /* Make sure the image covers the container width */
+        background-color: black; /* Move the image up by 200px to crop from the top */
+        /* bottom: -200px; */
+        /* background-color: aquamarine; */
+        left: -13px;
+    }
+
+
+
+    
+    
+   
+    
+}

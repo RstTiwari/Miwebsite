@@ -1,0 +1,115 @@
+.maine{
+    margin-top: -850px;
+    margin-left: 200x;
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+    position: relative;
+    top: -180px;
+}
+
+
+.footer-section {
+    padding: 1px;
+    display: flex;
+    justify-content: space-between; /* Align children elements to the sides */
+    padding-bottom: 10vh;
+}
+
+.heading{
+    padding: 1px;
+    margin: 1px;
+    text-align: center;
+    font-size: x-large;
+    
+}
+.para{
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    
+}
+.about-meraki{
+    padding-right: 100px;
+    padding-left: 10px;
+}
+
+/* ------------------------------------------------------ */
+
+
+
+.footer-section-2 {
+    flex: 1; /* Each section takes up half the available space */
+    max-width: 50%; /* Ensure each section doesn't exceed half the width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding-left: 200px;
+    padding-bottom: 1px;
+}
+
+.important-link {
+    flex: 1; /* Take up available space */
+    max-width: 300px; /* Optional: set a max-width */
+    font-size: x-large;
+}
+
+.links{
+    font-size: large;
+}
+.last-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+
+@media screen and (max-width:480px) {
+    .maine{
+        position: relative;
+        margin-top: -850px;
+        margin-left: -300x;
+        /* margin-right: 200px; */
+        /* background-color: aqua; */
+        /* flex-wrap: wrap; */
+        position: relative;
+        top: -650px;
+
+    }
+    .about-section .about-meraki{
+        /* padding-right: 300px; */
+        /* padding-left: 10px; */
+        width: 350px;
+        margin-left: -50px;
+        /* margin-top: 10px; */
+       
+    
+    }
+    .about-section .para{
+        /* margin-left: -70px; */
+        text-align:center;
+        white-space:unset;
+        /* background-color: aqua; */
+        word-break: break-word;
+        margin: 0 auto;
+       
+    }
+    .footer-section{
+        flex-direction: column;
+        
+    }
+    .footer-section-2 .important-link{
+        /* background-color: black; */
+        margin-top: 30px;
+        margin-left: -250px;
+        width: 300px;
+        
+    }
+
+    .footer-section-2 .links{
+        text-align: left;
+        margin-top: 10px;
+        margin-left: -190px;
+
+    }
+    
+}
