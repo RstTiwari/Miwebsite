@@ -1,0 +1,254 @@
+*{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+.logoImage{
+    height: 110px;
+    width: 100x;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+}
+.logoImage > p{
+    font-size: x-large;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.features{
+    /* align-items: start; */
+    /* margin-right: 100px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* position: absolute; */
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-weight: bolder;
+
+}
+.HeadingButton{
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    /* position: absolute; */
+    margin-right: 50px;
+    margin-bottom: 25px;
+    gap: 5px;
+}
+.aboutButton{
+    background-color: rgb(56, 244, 50);
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    transition: 0.5s ease-in;
+}
+.aboutButton:hover{
+    background-color: rgb(52, 220, 50);
+}
+
+.headingMail{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(56, 244, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* ================================ Search ============================================== */
+.searchContainer{
+    display: flex;
+    justify-content: center;
+    gap:50px ;
+    margin: 50px;
+    padding: 2px;
+    font-size: larger;
+}
+
+.inp-1 .ant-input, .inp-2 .ant-input, .inp-3 .ant-input {
+    border: 1px solid black; 
+    border-radius: 1px; 
+}
+
+.inp-1 .ant-input-search-button, .inp-2 .ant-input-search-button, .inp-3 .ant-input-search-button {
+    border: 1px solid black; 
+}
+.btn{
+    border: 1px solid black;
+    background-color: rgb(221, 208, 32);
+    border-radius: 14px;
+    width: 400px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    border-radius: 14px ;
+}
+.headingMeraki{
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+
+/* ============================responsive========================== */
+
+@media  (min-width:760px) and (max-width:960px){
+    .logo{
+        display: flex;
+        max-width: 100%;
+        
+    }
+    .logoImage p{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .logoImage div{
+        height: 80px;
+        width: 80px;
+        margin-top: 10px;
+    }
+    .features{
+        font-size: 1.2rem;
+        font-weight:bold;
+        text-align: start;
+        margin-top: 25px;
+        
+
+
+    }
+    .HeadingButton{
+        justify-content: end;
+        margin-right: 15px;
+        margin-bottom: 30px;
+       
+    }
+    .aboutButton{
+        background-color: rgb(244, 176, 50);
+        cursor: pointer;
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* font-weight: 500; */
+        transition: 0.5s ease-in;
+    }
+
+    /* ********************* Search **************** */
+    .searchContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 150px;
+        width: 500px;
+    }
+    .btn{
+        width: 300px;
+        margin-left: 120px;
+    }
+    
+}
+
+
+/* ==================================for mobile devices=============== */
+
+@media  (min-width:320px) and (max-width:450px){
+    .logo{
+        /* display: flex; */
+        max-width: 100vw;
+        /* background-color: rgb(182, 114, 25); */
+        height: 27%;
+    }
+    .logoImage p{
+        margin-bottom: 50px;
+        /* width: 120px; */
+        font-size: 9px;
+        font-style: normal;
+        margin-left: 1px;
+        width: 61px;
+        /* border: 2px solid black; */
+        
+    }
+
+    .logoImage div{
+        height: 25px;
+        width: 25px;
+        margin-top: 19px;
+    }
+    .features{
+        font-size: 10px;
+        font-style: normal;
+        text-align: start;
+        margin-top: 15px;
+        margin-left: 3px;
+        display: flex;
+        flex-direction: column;
+        /* width: 300px; */
+        height: 50px;
+       
+    
+    }
+
+    .features p{
+        width: 350px;
+
+
+    }
+    .HeadingButton{
+        position: relative;
+        right: 160px;
+        bottom: 1vh;
+        /* flex-direction: column; */
+        
+        
+
+        
+    }
+    .HeadingButton .aboutButton{
+        width: 11vw;
+        height: 4vh;
+        font-size: 8px;
+    }
+
+    .headingMail{
+        height: 6vw;
+        width: 4vh;
+    }
+
+/* ============================Search===================== */
+
+    .searchContainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 60px;
+        width: 250px;
+    }
+    .btn{
+        width: 150px;
+        margin-left: 40px;
+    }
+    
+}
+
+    
+    
+
+
