@@ -1,0 +1,162 @@
+.maine{
+    /* background-color: aqua; */
+    flex-wrap: wrap;
+    /* position: relative; */
+    margin: 5px;
+    margin-bottom: 50px;
+    height: 650px;
+}
+
+
+.footer-section {
+    padding: 1px;
+    display: flex;
+    justify-content: space-between; /* Align children elements to the sides */
+    padding-bottom: 10vh;
+}
+
+.heading{
+    padding: 1px;
+    margin: 1px;
+    text-align: center;
+    font-size: x-large;
+    
+}
+.para{
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    
+}
+.about-meraki{
+    padding-right: 100px;
+    padding-left: 10px;
+    line-height: 25px;
+    font-weight: 550;
+}
+
+/* ------------------------------------------------------ */
+
+
+
+.footer-section-2 {
+    margin-right: 120px;
+}
+
+.important-link {
+    font-size: x-large;
+}
+
+.links{
+    font-size: large;
+    font-weight: bold;
+    font-weight: 500;
+    color: black;
+    line-height: 35px;
+}
+.links, li, a{
+    color: black;
+}
+
+.last-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20 px;
+}
+.contact{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+.contactLogo{
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 18px;
+
+}
+.mail{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+
+}
+.mailLogo{
+    position: relative;
+    bottom: 10px;
+    padding: 5px;   
+    font-size: 35px;
+}
+.address{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+.addressLogo{
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============================responsive for tablet */
+
+
+
+@media (min-width:760px) and (max-width:900px) {
+    .footer-section-2 .important-link{
+        margin-right: 10px;
+        width: 300px;
+    }
+    .last-section{
+        position: relative;
+        bottom: 100px;
+        left:440px;
+    }
+    
+}
+
+
+@media (min-width:320px) and (max-width:450px) {
+    .maine{
+        height: 130vh;
+
+    }
+    .footer-section-2{
+        margin-right: 10px;
+        width: 300px;
+        position: relative;
+        top: 390px;
+        right: 320px;
+    }
+    .footer-section-2 .important-link{
+        margin-right: 10px;
+        width: 300px;
+    }
+    .heading{
+        width: 340px;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: start;
+        
+    }
+    .para{
+        font-size: 1em;
+    }
+
+    .last-section{
+        position: relative;
+        top: 200px;
+    }
+   
+    
+}

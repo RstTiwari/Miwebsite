@@ -1,0 +1,148 @@
+
+.Engi{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+   
+}
+
+.heading1{
+    font-size: 34px;
+    font-weight: bold;
+    color: #757575;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    transition: color 1s ease, transform 0.5s ease;
+    cursor: pointer;
+    text-align: center;
+}
+.heading1:active{
+    color: rgb(27, 222, 27);
+}
+
+.heading1:hover {
+    transform: scale(1.05); /* Slightly scale the text on hover */
+    
+}
+.machanical{
+    width: 420px;
+    height: 360px;
+    margin-right: 10px;
+
+}
+.machanical:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+.Electronic{
+    width: 420px;
+    height: 360px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.Electronic:hover {
+    transform: scale(1.05); 
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+}
+
+.Software{
+    width: 420px;
+    height: 360px;
+    cursor: pointer;
+}
+.Software:hover {
+    transform: scale(1.05); 
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+
+.container {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #333;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;    
+}
+
+.bolder{
+    font-weight: bolder;
+}
+.greenText {
+    color: #8b8e45;
+    font-weight: bold;
+  }
+  
+ @media  (min-width:700px) and (max-width:980px) {
+
+.heading1{
+    text-align: center;
+}
+.Engi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.machanical{
+    width: 230px;
+    height: 200px;
+    margin-right: 10px;
+
+}
+.Electronic{
+    width: 230px;
+    height: 200px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.Software{
+    width: 230px;
+    height: 200px;
+    cursor: pointer;
+}
+ }
+
+ /* **********************for mobile devices============== */
+
+ @media  (min-width:320px) and (max-width:450px) {
+
+    .heading1{
+        text-align: center;
+    }
+    .Engi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .machanical{
+        width: 300px;
+        height: 200px;
+        /* margin-right: 10px; */
+    
+    }
+    .Electronic{
+        width: 300px;
+        height: 200px;
+        /* margin-right: 10px; */
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .Software{
+        width: 300px;
+        height: 200px;
+        margin-top: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+     }

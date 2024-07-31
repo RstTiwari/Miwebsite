@@ -1,0 +1,19 @@
+.imageee{
+margin: 0px;
+margin-top: 20px;
+margin-left: 10px;
+}
+
+@media screen and (max-width:480px) {
+    .imageee{
+        display: block;
+        width: 340px;
+        height: 500px;
+        margin-left: -23px;
+        
+        
+    }
+
+    
+    
+}
