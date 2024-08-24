@@ -1,21 +1,13 @@
-<<<<<<< HEAD
-import Home from './Component/Home/Home'
 
-import './App.css'
-=======
-import './App.css'
 import Home from './components/Home/Home'
->>>>>>> b844f64 (first)
+import './App.css'
+
 
 function App() {
 
   return (
     <>
-<<<<<<< HEAD
-     <Home/>
-=======
     <Home/>
->>>>>>> b844f64 (first)
     </>
   )
 }

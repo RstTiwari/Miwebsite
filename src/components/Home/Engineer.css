@@ -26,39 +26,39 @@
     
 }
 .machanical{
-    width: 420px;
+    width: 410px;
     height: 360px;
     margin-right: 10px;
 
 }
-.machanical:hover {
+/* .machanical:hover {
     transform: scale(1.05); 
     cursor: pointer;
     transition: transform 0.5s ease;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-}
+} */
 .Electronic{
-    width: 420px;
+    width: 410px;
     height: 360px;
     margin-right: 10px;
     cursor: pointer;
 }
-.Electronic:hover {
+/* .Electronic:hover {
     transform: scale(1.05); 
     transition: transform 0.5s ease;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
-}
+} */
 
 .Software{
     width: 420px;
     height: 360px;
     cursor: pointer;
 }
-.Software:hover {
+/* .Software:hover {
     transform: scale(1.05); 
     transition: transform 0.5s ease;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-}
+} */
 
 
 .container {
@@ -146,3 +146,4 @@
         cursor: pointer;
     }
      }
+     
